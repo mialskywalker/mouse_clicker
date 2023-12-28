@@ -75,9 +75,9 @@ class Window:
         coordinate_a, coordinate_b, coordinate_c, coordinate_d, sleep = self.get_text()
         while True:
             try:
-                mouse.move(coordinate_a, coordinate_b)
+                mouse.move(coordinate_a, coordinate_b, True, 0)
                 mouse.click('left')
-                mouse.move(coordinate_c, coordinate_d)
+                mouse.move(coordinate_c, coordinate_d, True, 0)
                 mouse.click('left')
                 count += 2
                 time.sleep(float(sleep))
